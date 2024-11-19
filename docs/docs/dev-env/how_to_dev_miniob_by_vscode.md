@@ -145,7 +145,7 @@ code .
 
 ![image](images/vscode_break_point.png)
 
-注意：启动是会触发make，对工程进行编译。因为是单线程编译，所以第一次惦记启动gdb时需要时间较长，后续如果没有修改源码的操作，则直接踢动gdb进行调试。如果想使用多线程编译可以在tasks.json中配置make参数。
+注意：启动时会触发make，对工程进行编译。因为是单线程编译，所以第一次点击启动gdb时需要时间较长，后续如果没有修改源码的操作，则直接启动gdb进行调试。如果想使用多线程编译可以在tasks.json中配置make参数。
 
 ```json
         {
@@ -167,4 +167,4 @@ args中配置相当于make -j 4
 
 ![image](images/vscode_debug_miniob.png)
 
-注意：同种标记部分包括调试常用的功能，如：查看变量、调用栈、断点，以及n, s, finish, r等命令。
+注意：图中标记部分包括调试常用的功能，如：查看变量、调用栈、断点，以及n, s, finish, r等命令。
